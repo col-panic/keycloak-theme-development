@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:8
+    volumes:
+        - mysql_data:/var/lib/mysql
+    environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: keycloak
+        MYSQL_USER: keycloak
+        MYSQL_PASSWORD: password
+  keycloak: 
+    build: .
+    ports:
+      - 8009:8009
+      - 8080:8080
+      - 8443:8443
+      - 9990:9990
+    volumes:
+      - ./themes/:/opt/jboss/keycloak/themes/
+    environment:
+        DB_VENDOR: MYSQL
+        DB_ADDR: mysql
+        DB_DATABASE: keycloak
+        DB_USER: keycloak
+        DB_PASSWORD: password
+        KEYCLOAK_USER: admin
+        KEYCLOAK_PASSWORD: Pa55w0rd
+        KEYCLOAK_WELCOME_THEME: mytheme
+        KEYCLOAK_DEFAULT_THEME: mytheme
+    depends_on:
+        - mysql
+
+volumes: 
+    mysql_data:
