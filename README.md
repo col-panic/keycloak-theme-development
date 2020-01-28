@@ -1,6 +1,6 @@
 # Keycloak live theme development
 
-This setup provides a pre-configured area to (develop keycloak themes)[https://www.keycloak.org/docs/latest/server_development/index.html#_themes]. The keycloak version used is 8.0.1.
+This setup provides a pre-configured area to  [develop keycloak themes](https://www.keycloak.org/docs/latest/server_development/index.html#_themes). The keycloak version used is 8.0.1.
 
 ## Usage
 
