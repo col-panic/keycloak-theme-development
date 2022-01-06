@@ -17,7 +17,7 @@
     "axios": "^0.21.1",
     "moment": "^2.22.2",
     "object-keys": "^1.1.1",
-    "parse-link-header": "^1.0.1",
+    "parse-link-header": "^2.0.0",
     "punycode": "^2.1.1",
     "querystring": "^0.2.0",
     "react": "^16.8.5",
