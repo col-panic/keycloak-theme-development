@@ -15,7 +15,7 @@
     "@patternfly/react-core": "^3.35.0",
     "@types/node": "^12.7.2",
     "axios": "^0.21.1",
-    "moment": "^2.22.2",
+    "moment": "^2.29.2",
     "object-keys": "^1.1.1",
     "parse-link-header": "^1.0.1",
     "punycode": "^2.1.1",
